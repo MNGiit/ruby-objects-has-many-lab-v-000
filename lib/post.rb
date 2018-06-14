@@ -1,7 +1,8 @@
 class Post
   attr_accessor :title, :author
     @@all = [] #global variable set to an array
-  def initialize(title)
+    
+  def initialize(title) #do these things when #new is used
     @title = title #assign argument to instance variable
     @@all << self #pushes new instance into a global variable upon initialization
   end
