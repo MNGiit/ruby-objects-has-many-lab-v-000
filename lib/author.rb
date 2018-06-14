@@ -11,8 +11,9 @@ class Author
     post.author = self
   end
   
-  def add_pos_by_title(title)
-    
+  def add_post_by_title(title)
+    post = Post.new(title)
+    add_post(post)
   end
   
   def self.post_count #class method. returns sum number of posts associated to all existing authors
