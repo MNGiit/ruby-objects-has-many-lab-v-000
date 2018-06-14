@@ -11,7 +11,7 @@ class Post
     @@all
   end
   
-  def author_name
+  def author_name #instance will check if it has an author
     self.author ? self.author.name : nil
   end
   
