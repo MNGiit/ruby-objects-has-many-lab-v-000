@@ -6,8 +6,8 @@ class Song
     @@all << self
   end
   
-  def artist_name
-    self.artist.name != nil ? self.artist.name : nil
+  def artist_name #instance will check if it has an artist
+    self.artist ? self.artist.name : nil
   end
   
   def self.all
