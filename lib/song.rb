@@ -1,9 +1,9 @@
 class Song
   attr_accessor :name, :artist
-  @@all = [] #
+  @@all = [] #global variable set to an array
   def initialize(name)
     @name = name
-    @@all = []
+    @@all << self
   end
   
   def artist_name
