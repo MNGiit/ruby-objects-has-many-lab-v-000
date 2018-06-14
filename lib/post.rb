@@ -2,8 +2,8 @@ class Post
   attr_accessor :title, :author
     @@all = []
   def initialize(title)
-    @title = title
-    @@all << self
+    @title = title #assign argument to instance variable
+    @@all << self #pushes new instance into a global variable upon initialization
   end
   
   def self.all
