@@ -10,5 +10,5 @@ class Author
     post.author = self
   end
   
-  def 
+  def self.post_count #class method. returns sum number of posts associated with existing authors
 end
