@@ -18,10 +18,6 @@ class Artist
   end
   
   def self.song_count
-    counter = 0
-    Artist.each do |the_artist|
-      counter+= the_artist.songs.count
-    end
-    counter
+    Song.all.count
   end
 end
