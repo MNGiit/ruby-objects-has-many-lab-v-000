@@ -6,7 +6,7 @@ class Author
     @posts = [] #can't pass #posts test without this line
   end
   
-  def add_post(new_post)
+  def add_post(post)
     post.author = self
   end
   
