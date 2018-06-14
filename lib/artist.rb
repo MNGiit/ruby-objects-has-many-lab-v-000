@@ -17,7 +17,7 @@ class Artist
     add_song(song)
   end
   
-  def self.song_count #class method. returns total number of songs associated to all existing artists
+  def self.song_count #class method. returns sum number of songs associated to all existing artists
     Song.all.count
   end
 end
